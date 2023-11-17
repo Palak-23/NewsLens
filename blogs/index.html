@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style_blogs.css" />
+    <!--=============== Import Poppins - font ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--=============== Navbar ===============-->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Logo.jpg" alt="Trailblazers Icon" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="home">Home</a></li>
+          <li><a href="aboutUs">About Us</a></li>
+          <li><a href="blogs">Blogs</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--=============== blog ===============-->
+    <section id="blog">
+      <div class="blog-heading">
+        <h3>Our Blog</h3>
+      </div>
+
+      <!--=============== container===============-->
+      <div class="blog-box-container">
+        <!--== box - 1 ==-->
+        <div class="blog-box">
+          <!--== img ==-->
+          <div class="blog-box-img">
+            <img src="img_1.jpg" alt="blog img" />
+          </div>
+          <!--== text ==-->
+          <div class="blog-box-text">
+            <strong>Fake News</strong>
+            <a href="#">Introduction to Fake News Detection</a>
+            <!--== content ==-->
+            <div class="blog-post" id="post1">
+              <p class="content-preview">
+                In the age of information, where news travels at the speed of a
+                click, the specter of fake news looms large. The pervasiveness
+                of misinformation poses a serious threat to the fabric of public
+                discourse and trust.
+              </p>
+              <p class="content-full">
+                In the age of information, where news travels at the speed of a
+                click, the specter of fake news looms large. The pervasiveness
+                of misinformation poses a serious threat to the fabric of public
+                discourse and trust. This article unravels the intricate
+                landscape of fake news detection, shedding light on the critical
+                need for robust mechanisms to sift through the sea of
+                information. As society grapples with the consequences of
+                misleading narratives, understanding the nuances of fake news
+                and its detection becomes paramount. We'll explore the evolving
+                tactics employed by purveyors of misinformation and how
+                technology, particularly artificial intelligence and machine
+                learning, stands as a bulwark against these deceptive practices.
+                Navigating the terrain of falsehood demands not only
+                technological prowess but also a collective commitment to
+                fostering a more resilient and discerning global community. Join
+                us on this exploration into the realm of fake news detection and
+                its pivotal role in safeguarding the truth.
+              </p>
+              <button class="read-more-btn" onclick="toggleReadMore('post1')">
+                Read More
+              </button>
+            </div>
+            <!--== author ==-->
+            <div class="blog-author">
+              <div class="blog-author-img">
+                <img src="img_1.jpg" alt="" />
+              </div>
+              <div class="blog-author-text">
+                <strong>Ayushman</strong>
+                <span>November 16, 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--== box - 2==-->
+        <div class="blog-box">
+          <!--== img ==-->
+          <div class="blog-box-img">
+            <img src="img_2.jpg" alt="blog img" />
+          </div>
+
+          <!--== text ==-->
+          <div class="blog-box-text">
+            <strong>Fake News</strong>
+            <a href="#">Machine Learning in Fake News Detection</a>
+
+            <!--== content ==-->
+            <div class="blog-post" id="post2">
+              <p class="content-preview">
+                In the perpetual battle against misinformation, machine learning
+                emerges as a stalwart defender of truth. This article delves
+                into the intricate role that machine learning algorithms play in
+                the realm of fake news detection.
+              </p>
+              <p class="content-full">
+                In the perpetual battle against misinformation, machine learning
+                emerges as a stalwart defender of truth. This article delves
+                into the intricate role that machine learning algorithms play in
+                the realm of fake news detection. As purveyors of misinformation
+                evolve, so must our tools for identification and mitigation.
+                We'll unravel the layers of natural language processing and
+                pattern recognition, showcasing how these algorithms discern
+                subtle cues within vast datasets to separate fact from fiction.
+                Understanding the mechanics of machine learning in fake news
+                detection is essential for comprehending the dynamic landscape
+                of information warfare. Join us in exploring the transformative
+                power of these algorithms, which stand as a beacon of hope in an
+                era where the authenticity of information is paramount. In the
+                ever- evolving arms race against misinformation, machine
+                learning proves to be a formidable ally, fostering a more
+                resilient and discerning information ecosystem.
+              </p>
+              <button class="read-more-btn" onclick="toggleReadMore('post2')">
+                Read More
+              </button>
+            </div>
+            <!--== author ==-->
+            <div class="blog-author">
+              <div class="blog-author-img">
+                <img src="img_2.jpg" alt="" />
+              </div>
+              <div class="blog-author-text">
+                <strong>Palak</strong>
+                <span>November 9, 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--== box - 3==-->
+        <div class="blog-box">
+          <!--== img ==-->
+          <div class="blog-box-img">
+            <img src="img_3.jpg" alt="blog img" />
+          </div>
+
+          <!--== text ==-->
+          <div class="blog-box-text">
+            <strong>Fake News</strong>
+            <a href="#"> Social Media's Role in Fake News Proliferation</a>
+
+            <!--== content ==-->
+            <div class="blog-post" id="post3">
+              <p class="content-preview">
+                In the interconnected world of social media, information spreads
+                like wildfire, often blurring the lines between truth and
+                deception. This article unravels the intricate web of social
+                media's role in the proliferation of fake news.
+              </p>
+              <p class="content-full">
+                In the interconnected world of social media, information spreads
+                like wildfire, often blurring the lines between truth and
+                deception. This article unravels the intricate web of social
+                media's role in the proliferation of fake news. From the
+                psychology of sharing to the algorithms shaping our online
+                experiences, we'll explore the multifaceted aspects that
+                contribute to the rapid dissemination of misinformation. As
+                users navigate the vast landscape of digital interactions,
+                understanding the challenges posed by social media platforms in
+                fake news detection becomes paramount. The impact on public
+                opinion and the erosion of trust in information are profound
+                consequences of this dynamic environment. Join us as we delve
+                into the complexities of social media's involvement in the
+                propagation of misinformation, shedding light on the urgent need
+                for nuanced strategies to safeguard the authenticity of
+                information in the digital age.
+              </p>
+              <button class="read-more-btn" onclick="toggleReadMore('post3')">
+                Read More
+              </button>
+            </div>
+            <!--== author ==-->
+            <div class="blog-author">
+              <div class="blog-author-img">
+                <img src="img_3.jpg" alt="" />
+              </div>
+              <div class="blog-author-text">
+                <strong>Khushi</strong>
+                <span>October 23, 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--== box - 4 ==-->
+        <div class="blog-box">
+          <!--== img ==-->
+          <div class="blog-box-img">
+            <img src="img_4.jpg" alt="blog img" />
+          </div>
+          <!--== text ==-->
+          <div class="blog-box-text">
+            <strong>Fake News</strong>
+            <a href="#">Deepfake Technology and Misinformation</a>
+            <!--== content ==-->
+            <div class="blog-post" id="post4">
+              <p class="content-preview">
+                In the ever-evolving landscape of misinformation, a new and
+                formidable player has emerged — deepfake technology. This
+                article explores the profound implications of deepfakes on the
+                credibility of information. Deepfakes, utilizing artificial
+                intelligence to create convincingly realistic videos and audio
+                recordings, present a novel challenge in the battle against
+                falsehood.
+              </p>
+              <p class="content-full">
+                In the ever-evolving landscape of misinformation, a new and
+                formidable player has emerged — deepfake technology. This
+                article explores the profound implications of deepfakes on the
+                credibility of information. Deepfakes, utilizing artificial
+                intelligence to create convincingly realistic videos and audio
+                recordings, present a novel challenge in the battle against
+                falsehood. We'll dissect the mechanics of deepfake technology,
+                understanding how it blurs the lines between reality and
+                fabrication. The impact on public perception and the potential
+                for malicious use are substantial, demanding innovative
+                approaches to fake news detection. As we navigate this uncharted
+                territory, it becomes clear that staying ahead of the curve
+                requires a deep understanding of the technology at play. Join us
+                in unraveling the complexities of deepfake technology and its
+                implications for the authenticity of information in an era where
+                trust is increasingly under scrutiny.
+              </p>
+              <button class="read-more-btn" onclick="toggleReadMore('post4')">
+                Read More
+              </button>
+            </div>
+            <!--== author ==-->
+            <div class="blog-author">
+              <div class="blog-author-img">
+                <img src="img_4.jpg" alt="" />
+              </div>
+              <div class="blog-author-text">
+                <strong>Aman</strong>
+                <span>October 15, 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--== box - 5 ==-->
+        <div class="blog-box">
+          <!--== img ==-->
+          <div class="blog-box-img">
+            <img src="img_5.jpg" alt="blog img" />
+          </div>
+          <!--== text ==-->
+          <div class="blog-box-text">
+            <strong>Fake News</strong>
+            <a href="#"> Collaborative Approaches to Fake News Detection</a>
+            <!--== content ==-->
+            <div class="blog-post" id="post5">
+              <p class="content-preview">
+                In the ongoing battle against fake news, unity becomes a
+                formidable weapon. This article underscores the significance of
+                collaborative approaches in the detection and mitigation of
+                misinformation. As the digital landscape continues to evolve, a
+                collective effort involving technology companies, researchers,
+                and the wider public is crucial.
+              </p>
+              <p class="content-full">
+                In the ongoing battle against fake news, unity becomes a
+                formidable weapon. This article underscores the significance of
+                collaborative approaches in the detection and mitigation of
+                misinformation. As the digital landscape continues to evolve, a
+                collective effort involving technology companies, researchers,
+                and the wider public is crucial. We'll explore the various
+                initiatives that promote collaboration, from open-source
+                projects aimed at developing advanced detection algorithms to
+                community-driven efforts to raise awareness. Fostering a united
+                front against misinformation enhances the accuracy and effciency
+                of detection strategies. This article delves into the power of
+                collaborative endeavors in creating a more resilient and
+                informed society. By understanding the importance of joint
+                action, readers gain insights into how a shared commitment to
+                truth can fortify our defenses against the pervasive threat of
+                fake news. Join us on this exploration of collaborative
+                approaches, where strength lies in unity in the face of digital
+                misinformation.
+              </p>
+              <button class="read-more-btn" onclick="toggleReadMore('post5')">
+                Read More
+              </button>
+            </div>
+            <!--== author ==-->
+            <div class="blog-author">
+              <div class="blog-author-img">
+                <img src="img_5.jpg" alt="" />
+              </div>
+              <div class="blog-author-text">
+                <strong>Mukund</strong>
+                <span>October 2, 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--== box - 6 ==-->
+        <div class="blog-box">
+          <!--== img ==-->
+          <div class="blog-box-img">
+            <img src="img_6.jpg" alt="blog img" />
+          </div>
+          <!--== text ==-->
+          <div class="blog-box-text">
+            <strong>Fake News</strong>
+            <a href="#"> Ethical Considerations in Fake News Detection</a>
+            <!--== content ==-->
+            <div class="blog-post" id="post6">
+              <p class="content-preview">
+                As technology advances to combat the spread of fake news,
+                ethical considerations come to the forefront. This article
+                delves into the complex intersection of technology and ethics in
+                the realm of fake news detection.
+              </p>
+              <p class="content-full">
+                As technology advances to combat the spread of fake news,
+                ethical considerations come to the forefront. This article
+                delves into the complex intersection of technology and ethics in
+                the realm of fake news detection. While sophisticated algorithms
+                and artificial intelligence play a pivotal role in
+                distinguishing truth from falsehood, questions arise about the
+                potential misuse of these tools. We'll explore the ethical
+                challenges associated with surveillance, privacy infringement,
+                and the potential for algorithmic bias. Additionally, the
+                responsibility of technology developers and policymakers in
+                striking a balance between effective detection and protecting
+                individual rights will be examined. Join us in navigating the
+                ethical landscape surrounding fake news detection, emphasizing
+                the need for transparency, accountability, and a thoughtful
+                approach to ensure that the tools we deploy align with our
+                ethical principles in the pursuit of truth.
+              </p>
+              <button class="read-more-btn" onclick="toggleReadMore('post6')">
+                Read More
+              </button>
+            </div>
+            <!--== author ==-->
+            <div class="blog-author">
+              <div class="blog-author-img">
+                <img src="img_6.jpg" alt="" />
+              </div>
+              <div class="blog-author-text">
+                <strong>Ayushman</strong>
+                <span>September 28, 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script_blog.js"></script>
+  </body>
+</html>
