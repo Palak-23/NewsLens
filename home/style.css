@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+/*   
+  <!--=============== Navbar ===============--> */
+.navbar {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 105px;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  margin-right: 70px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.container {
+  max-width: 725px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2.4rem;
+  color: #252525;
+  font-weight: 800;
+  line-height: 2.4rem;
+  padding-bottom: 30px;
+}
+
+/*   
+  <!--=============== URL Input Box ===============--> */
+  .url-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+  }
+
+  .url-input {
+    width: 400px;
+    height: 50px; /* Set a fixed height similar to a textarea */
+    padding: 8px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical; /* Allow vertical resizing like a textarea */
+    overflow-y: auto; /* Show a scrollbar when content exceeds the height */
+}
+
+.url-input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.url-input::placeholder {
+    color: #888;
+}
+
+/* Optional: Style for an invalid input */
+.url-input:invalid {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+/* ======OR separator====== */
+.or-separator {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px 10px 10px 10px;
+}
+
+.or-separator h2 {
+  font-size: 1.7rem;
+  color: #252525;
+  font-weight: 600;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+/*   
+  <!--=============== Content Input Box ===============--> */
+textarea {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
+  padding: 20px 20px 10px 20px;
+  box-sizing: border-box;
+}
+
+/* .btn-smt {
+  padding: 10px;
+  background-color: #333030;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+} */
+
+.btn-smt {
+  padding: 10px;
+  background-color: #333030;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Add transition for smooth hover effect */
+  border-radius: 8px; /* Adjust the value for desired curvature */
+}
+
+.btn-smt:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Home Page</title>
+  </head>
+  <body>
+    <!--=============== Navbar ===============-->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Logo.jpg" alt="Trailblazers Icon" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="home">Home</a></li>
+          <li><a href="aboutUs">About Us</a></li>
+          <li><a href="blogs">Blogs</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Fake News Detector</h1>
+      <!--=============== URL Input box ===============-->
+      <div class="url-container">
+        <input
+          type="url"
+          id="urlInput"
+          class="url-input"
+          placeholder="Enter URL"
+        />
+        <button class="btn-smt" onclick="validateUrl()">Validate URL</button>
+        <p id="validationResult"></p>
+      </div>
+      <!-- ======OR====== -->
+      <div class="or-separator">
+        <h2>OR</h2>
+      </div>
+      <!--=============== Content Input box ===============-->
+      <textarea id="textInput" placeholder="Paste Your Text Here..."></textarea>
+      <button class="btn-smt" onclick="detectFakeNews()">
+        Detect Fake News
+      </button>
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
