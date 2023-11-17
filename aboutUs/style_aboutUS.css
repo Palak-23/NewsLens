@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+/*   
+<!--=============== Navbar ===============--> */
+.navbar {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 105px;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  margin-right: 70px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* about us */
+#aboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+  background-color: #f9f8ff;
+}
+
+.aboutUs-heading h2 {
+  font-size: 2.4rem;
+  color: #252525;
+  font-weight: 800;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.cnt-heading h3 {
+  font-size: 1.7rem;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 600;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.cnt-abt-project {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 50px 40px 50px;
+}
+
+.cnt-abt-project p {
+  color: #252525;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.tech-stack-used {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 10px 40px 10px;
+}
+
+.tech-stack-used h3 {
+  font-size: 1.7rem;
+  color: #252525;
+  font-weight: 800;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.back-end h4 {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 800;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+}
+
+.front-end h4 {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 800;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.tech-stack-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 2px;
+}
+
+.tech-stack-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  margin-right: 0px;
+}
+
+.tech-stack-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-stack-text strong {
+  color: #252525;
+  font-weight: 800;
+}
+
+/* .tech-stack-used p {
+  color: #797979;
+  font-size: 1 rem;
+  font-weight: 400;
+  padding: 20px 10px 40px 10px;
+} */
+
+.member-heading h3 {
+  font-size: 1.7rem;
+  color: #252525;
+  font-weight: 800;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.team-member-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1050px;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.team-member-box {
+  max-width: 350px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-member-box:hover {
+  background-color: #ffffff;
+  box-shadow: 16px 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.member-img {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  max-width: 600px;
+  overflow: hidden;
+  display: flex;
+}
+
+.member-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.member-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}
+
+.member-text strong {
+  color: #252525;
+  font-size: 1 rem;
+  font-weight: 400;
+}
+
+.member-text span {
+  color: #797979;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* ====making responsive==== */
+@media (max-width: 920px) {
+  .team-member-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-member-container {
+    grid-template-columns: 1fr;
+  }
+  .aboutUs-heading h2 {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+}
